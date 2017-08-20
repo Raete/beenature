@@ -1,11 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
-/* SET COLORS AND FONTS ------------------------------------------------- */
-$font-1: 'Open Sans Condensed', sans-serif;
-$font-2: 'Open Sans', sans-serif;
-
+/* SET COLORS AND OTHER VAR ------------------------------------------------- */
 $color-1: #e01f4c;
 $color-2: #b51339;
+
+$color-3: #74a81f;
+$color-4: #618e18;
+
+$color-5: #0aa5ad;
+$color-6: #077e84;
+
+$color-7: #e5e5e5;
+$color-8: #111111;
 
 $width: 1170px;
 
@@ -32,7 +38,6 @@ body, html {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  display: block;
   &--red {
     color: white;
     background: $color-1;
@@ -46,11 +51,29 @@ body, html {
     &:hover {
       color: white;
       background: $color-2;
-       border: 1px solid $color-2;
+      border: 1px solid $color-2;
     }
   }
-}
+  &--blue { 
+    color: white;
+    border: 1px solid white;
+    &:hover {
+      color: white;
+      background: $color-6;
+      border: 1px solid $color-6;
+    }
+  }
+  &--green { 
+    color: white;
+    border: 1px solid white;
+    &:hover {
+      color: white;
+      background: $color-4;
+      border: 1px solid $color-4;
+    }
+  }
 
+}
 
 /* SECTION - INTRO ---------------------------------------------------- */
 .intro {
@@ -91,7 +114,7 @@ body, html {
 }
 
 .header {
-  padding-top: 10px;
+  padding-top: 50px;
   &__logo {
   display: flex;
   align-items: center;
@@ -116,6 +139,16 @@ body, html {
   .text {
     font-size: 20px;
   }
+}
+
+/* media queries ---------------------------------------------------- */
+
+@media screen and (max-width: 500px) { 
+	.headline__wrapper {
+		.headline {
+    		font-size: 50px;
+  		}
+	}
 }
 
 /* SERVICES ---------------------------------------------------- */
@@ -148,6 +181,18 @@ body, html {
     margin: 0;
     color: white;
   }
+}
+
+/* media queries ---------------------------------------------------- */
+
+@media screen and (max-width: 500px) { 
+	.alert-bar {
+		flex-direction: column;
+		text-align: center;
+ 		&__h1 {
+    		margin-bottom: 20px
+  		}
+	}
 }
 
 /* GALLERY ---------------------------------------------------- */
@@ -241,3 +286,77 @@ body, html {
   opacity: 0.4;
 }
 
+/* BLOG ---------------------------------------------------- */
+.blog {
+  &__item {
+    padding: 50px;
+    color: white;
+    &--green {
+      background: $color-3;
+    }
+    &--blue {
+      background: $color-5;
+    }
+    &--red {
+      background: $color-1;
+    }
+    &__h1 {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    &__p {
+
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/* PREFOOTER ---------------------------------------------------- */
+.prefooter {
+	background: $color-7;
+	padding: 100px 50px 50px 50px;
+	color: $color-1;
+	&__item {
+		margin-bottom: 50px;	
+	}
+	&__h1 {
+		font-size: 20px;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-right: 50px;	
+	}
+	&__email, &__message {
+		padding: 20px 20px 0 5px;
+		background: transparent;
+		border: 0;
+		border-bottom: 1px solid $color-1;
+		margin-bottom: 20px;
+		width: 100%;
+		&:focus {
+			outline: 0;
+		}
+    }
+}
+
+/* media queries ---------------------------------------------------- */
+@media screen and (max-width: 500px) { 
+	.prefooter {
+	&__form {
+		padding-right: 0;	
+		}
+	}
+}
+
+/* FOOTER ---------------------------------------------------- */
+.footer {
+	background: $color-2;
+	padding: 10px;
+	color: white;
+	text-align: center;
+}

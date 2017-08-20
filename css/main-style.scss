@@ -144,17 +144,10 @@ body, html {
 /* media queries ---------------------------------------------------- */
 
 @media screen and (max-width: 500px) { 
-	#video-background {
-		display: none;
-	}
 	.headline__wrapper {
-		height: 70%;
 		.headline {
     		font-size: 50px;
   		}
-	}
-	.intro {
-    	background: url("../img/bg01.jpg") fixed;
 	}
 }
 
@@ -217,7 +210,7 @@ body, html {
     img {
       position: relative;
       display: block;
-      min-height: auto;
+      min-height: 100%;
       max-width: 100%;
       opacity: 0.9;
       -webkit-transition: opacity 0.35s;

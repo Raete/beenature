@@ -5,26 +5,189 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Zolua</title>
+	<title>Beenature</title>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
 		  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/main-style.css">
+
 </head>
 <body>
-<h1>Hello, world!</h1>
 
+<section class="intro"><!------------------------------------------- INTRO WITH VIDEO -->
+	<video autoplay loop id="video-background" muted plays-inline>
+		<source src="img/vid01.mp4" type="video/mp4">
+	</video>
+	<div class="into__overlay"></div>
 
+	<header class="header"><!------------------------- logo -->
+		<div class="header__logo">
+			<img src="img/beenature.svg" alt="">
+		</div>
+	</header>
 
+		<div class="headline__wrapper"><!------------------------- text with button -->
+			<h1 class="headline"> This is Beenature</h1>
+			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<a href="#services" class="btn btn--red">Learn about us</a>
+		</div>
+</section>
 
+<section class="services container" id="services"><!------------------------------------------- SERVICES -->
+	<div class="row">
+		<div class="services__item col-sm-6 col-md-4"><!------------------------- service item -->
+			<img src="icon/garden.svg" alt="" class="services__item__img">
+			<h1 class="services__item__h1"> Nunc tristique dui </h1>
+			<p class="services__item__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique dui quis tempus aliquam. Nulla at pharetra nunc.  </p>
+		</div>
+		<div class="services__item col-sm-6 col-md-4"><!------------------------- service item -->
+			<img src="icon/goal.svg" alt="" class="services__item__img">
+			<h1 class="services__item__h1"> Nunc tristique dui </h1>
+			<p class="services__item__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique dui quis tempus aliquam. Nulla at pharetra nunc.  </p>
+		</div>
+		<div class="services__item col-sm-6 col-md-4"><!------------------------- service item -->
+			<img src="icon/hills.svg" alt="" class="services__item__img">
+			<h1 class="services__item__h1"> Nunc tristique dui </h1>
+			<p class="services__item__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique dui quis tempus aliquam. Nulla at pharetra nunc.  </p>
+		</div>
+		<div class="services__item col-sm-6 col-md-4"><!------------------------- service item -->
+			<img src="icon/sprout01.svg" alt="" class="services__item__img">
+			<h1 class="services__item__h1"> Nunc tristique dui </h1>
+			<p class="services__item__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique dui quis tempus aliquam. Nulla at pharetra nunc.  </p>
+		</div>
+		<div class="services__item col-sm-6 col-md-4"><!------------------------- service item -->
+			<img src="icon/sprout02.svg" alt="" class="services__item__img">
+			<h1 class="services__item__h1"> Nunc tristique dui </h1>
+			<p class="services__item__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique dui quis tempus aliquam. Nulla at pharetra nunc.  </p>
+		</div>
+		<div class="services__item col-sm-6 col-md-4"><!------------------------- service item -->
+			<img src="icon/tree.svg" alt="" class="services__item__img">
+			<h1 class="services__item__h1"> Nunc tristique dui </h1>
+			<p class="services__item__p"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique dui quis tempus aliquam. Nulla at pharetra nunc.  </p>
+		</div>
+	</div>
+</section><!------------------------- END SERVICE -->
 
+<section class="alert-bar__wrapper"><!------------------------- ALERT BAR -->
+	<div class="alert-bar">
+		<h1 class="alert-bar__h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+		<a href="" class="btn btn--white">Explore</a>
 
+	</div>
+</section>
 
+<section class="gallery__wrapper container-fluid no-padding"><!------------------------- GALLERY -->
+	<div class="gallery row">
 
+		<figure class="gallery__item no-margin no-padding col-lg-3 col-md-6 col-sm-6"><!------------------------- gallery item -->
+			<img src="img/img01.jpg" alt="Forest"/>
+			<figcaption class="gallery__text">
+				<h2 class="gallery__h2">Forest</h2>
+			</figcaption>
+		</figure>
 
+		<figure class="gallery__item no-margin no-padding col-lg-3 col-md-6 col-sm-6"><!------------------------- gallery item -->
+			<img src="img/img02.jpg" alt="Lake"/>
+			<figcaption class="gallery__text">
+				<h2 class="gallery__h2">Lake</h2>
+			</figcaption>
+		</figure>
 
+		<figure class="gallery__item no-margin no-padding col-lg-3 col-md-6 col-sm-6"><!------------------------- gallery item -->
+			<img src="img/img03.jpg" alt="Mountains"/>
+			<figcaption class="gallery__text">
+				<h2 class="gallery__h2">Mountains</h2>
+			</figcaption>
+		</figure>
 
+		<figure class="gallery__item no-margin no-padding col-lg-3 col-md-6 col-sm-6"><!------------------------- gallery item -->
+			<img src="img/img04.jpg" alt="Mountains"/>
+			<figcaption class="gallery__text">
+				<h2 class="gallery__h2">Mountains</h2>
+			</figcaption>
+		</figure>
 
+		<figure class="gallery__item no-margin no-padding col-lg-3 col-md-6 col-sm-6"><!------------------------- gallery item -->
+			<img src="img/img05.jpg" alt="Valley"/>
+			<figcaption class="gallery__text">
+				<h2 class="gallery__h2">Valley</h2>
+			</figcaption>
+		</figure>
+
+		<figure class="gallery__item no-margin no-padding col-lg-3 col-md-6 col-sm-6"><!------------------------- gallery item -->
+			<img src="img/img06.jpg" alt="Forest"/>
+			<figcaption class="gallery__text">
+				<h2 class="gallery__h2">Forest</h2>
+			</figcaption>
+		</figure>
+
+		<figure class="gallery__item no-margin no-padding col-lg-3 col-md-6 col-sm-6"><!------------------------- gallery item -->
+			<img src="img/img07.jpg" alt="Forest"/>
+			<figcaption class="gallery__text">
+				<h2 class="gallery__h2">Forest</h2>
+			</figcaption>
+		</figure>
+
+		<figure class="gallery__item no-margin no-padding col-lg-3 col-md-6 col-sm-6"><!------------------------- gallery item -->
+			<img src="img/img08.jpg" alt="Field"/>
+			<figcaption class="gallery__text">
+				<h2 class="gallery__h2">Field</h2>
+			</figcaption>
+		</figure>
+
+	</div>
+</section><!------------------------- END GALLERY -->
+
+<section class="blog container-fluid"><!------------------------- BLOG -->
+	<div class="row">
+		<article class="blog__item blog__item--green col-lg-4"><!------------------------- article -->
+			<h1 class="blog__item__h1">Morbi vitae turpis nulla</h1>
+			<p class="blog__item__p">Nunc rutrum, erat ac sollicitudin varius, magna nisl congue odio, ac auctor est risus non nibh. Maecenas vel lorem vel lectus vehicula cursus non at tortor. Nam laoreet enim id nulla maximus malesuada.</p>
+			<a href="" class="btn btn--green">Discover more</a>
+		</article>
+
+		<article class="blog__item blog__item--blue col-lg-4"><!------------------------- article -->
+			<h1 class="blog__item__h1">Morbi vitae turpis nulla</h1>
+			<p class="blog__item__p">Nunc rutrum, erat ac sollicitudin varius, magna nisl congue odio, ac auctor est risus non nibh. Maecenas vel lorem vel lectus vehicula cursus non at tortor. Nam laoreet enim id nulla maximus malesuada.</p>
+			<a href="" class="btn btn--blue">Discover more</a>
+		</article>
+
+		<article class="blog__item blog__item--red col-lg-4"><!------------------------- article -->
+			<h1 class="blog__item__h1">Morbi vitae turpis nulla</h1>
+			<p class="blog__item__p">Nunc rutrum, erat ac sollicitudin varius, magna nisl congue odio, ac auctor est risus non nibh. Maecenas vel lorem vel lectus vehicula cursus non at tortor. Nam laoreet enim id nulla maximus malesuada.</p>
+			<a href="" class="btn btn--white">Discover more</a>
+		</article>
+	</div>
+</section>
+
+<aside class="prefooter"><!------------------------- PREFOOTER -->
+	<div class="container">
+		<div class="row">
+			<div class="prefooter__item col-md-6"><!------------------------- prefooter-column 1 -->
+				<h1 class="prefooter__h1">beenature</h1>
+				<p class="prefooter__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce suscipit libero eget elit. Vivamus ac leo pretium faucibus. Mauris elementum mauris vitae tortor. Maecenas lorem. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. </p>
+				<div>Icons made by 
+					<a href="http://www.freepik.com" title="Freepik">Freepik</a> from 
+					<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+				</div>
+			</div>
+			<div class="prefooter__item col-md-6"><!------------------------- prefooter-column 2 -->
+				<h1 class="prefooter__h1">Contact</h1>
+				<form action="#" class="prefooter__form">
+					<input class="prefooter__email type="text" name="email" placeholder="Email">
+					<textarea class="prefooter__message" name="message" placeholder="Message" rows="1"></textarea>
+					<input class="prefooter__button btn btn--red" type="submit" class="button" value="Send">
+				</form>
+			</div>
+		</div>
+	</div>
+</aside><!------------------------- END PREFOOTER -->
+
+<footer class="footer"><!------------------------- FOOTER -->
+	<small><a href="http://www.janakoudelkova.cz">www.janakoudelkova.cz</a> | 2017</small>
+</footer>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"

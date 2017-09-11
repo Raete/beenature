@@ -26,4 +26,13 @@ $( "#article-delete" ).click(function(e) {
   $(".full-article").addClass('de-active');
 });
 
+
+
+
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+
+
   })(jQuery);

@@ -10,9 +10,10 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
 		  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		  
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans:400,700" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/main-style.css">
-
+	<link rel="stylesheet" href="css/main-style.min.css">
 </head>
 <body>
 
@@ -31,7 +32,7 @@
 		<div class="headline__wrapper"><!------------------------- text with button -->
 			<h1 class="headline"> This is Beenature</h1>
 			<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			<a href="#services" class="btn btn--red">Learn about us</a>
+			<a href="https://youtu.be/LK0UM_TfZr8" target="_blank" class="btn btn--red">Learn about us</a>
 		</div>
 </section>
 
@@ -70,13 +71,22 @@
 	</div>
 </section><!------------------------- END SERVICE -->
 
-<section class="alert-bar__wrapper"><!------------------------- ALERT BAR -->
-	<div class="alert-bar">
-		<h1 class="alert-bar__h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-		<a href="" class="btn btn--white">Explore</a>
+<section class="explore"><!------------------------- VIDEO -->
+	<div class="explore__wrapper">
+		<div class="explore__content">
+			<h2 class="explore__content__h2">It's a <strong>big world</strong> out there</h2>
+			<h1 class="explore__content__h1">Go exploore</h1>
+			<p class="explore__content__p">There are many variations of passages of. Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look.</p>
+			
+		</div>
 
+	 	<div class="explore__video">
+                <div class="video__wrapper"><!-- video section-->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LK0UM_TfZr8?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
 	</div>
-</section>
+</section><!------------------------- END VIDEO -->
 
 <section class="gallery__wrapper container-fluid no-padding"><!------------------------- GALLERY -->
 	<div class="gallery row">
@@ -145,7 +155,24 @@
 		<article class="blog__item blog__item--green col-lg-4"><!------------------------- article -->
 			<h1 class="blog__item__h1">Morbi vitae turpis nulla</h1>
 			<p class="blog__item__p">Nunc rutrum, erat ac sollicitudin varius, magna nisl congue odio, ac auctor est risus non nibh. Maecenas vel lorem vel lectus vehicula cursus non at tortor. Nam laoreet enim id nulla maximus malesuada.</p>
-			<a href="" class="btn btn--green">Discover more</a>
+			<a href="" class="btn btn--green" id="green-article">Discover more</a>
+
+			<div class="full-article">
+				
+				<div class="article">
+					<h1 class="article-h1">Morbi vitae turpis nulla</h1>
+					<span class="article-perex">
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam ornare wisi eu metus. In convallis. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Cras elementum. Fusce wisi. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Duis viverra diam non justo.
+					</span>
+					<p class="article-p">
+						Aliquam erat volutpat. Nam sed tellus id magna elementum tincidunt. Vivamus luctus egestas leo. Etiam commodo dui eget wisi. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Cras elementum. Etiam neque.
+					</p>
+					<p class="article-p">
+						Cras elementum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Praesent id justo in neque elementum ultrices. Aliquam erat volutpat. Morbi scelerisque luctus velit. Duis pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Fusce aliquam vestibulum ipsum. Nunc tincidunt ante vitae massa. Nunc dapibus tortor vel mi dapibus sollicitudin. Praesent dapibus. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Nullam at arcu a est sollicitudin euismod. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Aenean id metus id velit ullamcorper pulvinar. Morbi leo mi, nonummy eget tristique non, rhoncus non leo
+					</p>
+					<a href="" id="article-delete" class="btn btn--green">Back to site</a>
+				</div>
+			</div>
 		</article>
 
 		<article class="blog__item blog__item--blue col-lg-4"><!------------------------- article -->
@@ -190,14 +217,11 @@
 </footer>
 
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-		integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-		crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-		integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-		crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-		integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-		crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
 </body>
 </html>
